@@ -1,0 +1,27 @@
+{
+  "name": "flexbox",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/laslomcd/flexbox.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/laslomcd/flexbox/issues"
+  },
+  "homepage": "https://github.com/laslomcd/flexbox#readme",
+  "devDependencies": {
+    "autoprefixer": "^9.1.5",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^6.0.0"
+  },
+  "dependencies": {
+    "gulp-update": "0.0.2"
+  }
+}
