@@ -24,3 +24,9 @@
     -ms-flex: 1 1 400px;
     flex: 1 1 400px;
 }
+
+.box3 {
+    -webkit-box-flex: 2;
+    -ms-flex: 2 2 400px;
+    flex: 2 2 400px;
+}

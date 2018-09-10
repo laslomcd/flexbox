@@ -12,3 +12,7 @@
 .box2 {
     flex: 1 1 400px;
 }
+
+.box3 {
+    flex: 2 2 400px;
+}
