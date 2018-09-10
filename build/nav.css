@@ -34,17 +34,36 @@ a:hover {
     background: rgba(0,0,0,0.3);
 }
 
+img {
+    width: 100%;
+}
+
 .wrapper {
     max-width: 1000px;
     margin: 0 auto;
-    padding: 50px;
+    padding: 0 50px;
+}
+
+input {
+    padding: 10px;
+    border: 0;
+}
+
+section,
+footer {
+    text-align: center;
+    background: rgba(0,0,0,0.2);
+    padding: 20px;
+    margin: 20px 0;
+    color: white;
+    font-weight: 100;
 }
 
 /* Flex Container */
 .flex-nav ul {
     border: 1px solid black;
     list-style: none;
-    margin: 0;
+    margin: 20px 0;
     padding: 0;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -83,5 +102,38 @@ a:hover {
 }
 
 @media all and (max-width: 500px) {
+    .flex-nav li {
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    }
+    .wrapper {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
 
+    .wrapper > * {
+        -webkit-box-ordinal-group:10000;
+        -ms-flex-order:9999;
+        order:9999;
+    }
+
+    .flex-nav {
+        -webkit-box-ordinal-group:2;
+        -ms-flex-order:1;
+        order:1;
+    }
+
+    .toggleNav {
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .flex-nav ul {
+        display: none;
+    }
 }
